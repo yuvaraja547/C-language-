@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main() 
+{
+    int a,b;
+    printf("enter the values:");
+    scanf("%d %d",&a , &b);
+    int big=a>b ? a:b;
+    int  result=big;
+    while(1)
+    {
+        if(big%a==0 && big%b==0)
+        break;
+        else 
+        big=big+result;
+    }
+    printf("%d",big);
+    
+
+
+    return 0;
+}
